@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 105%;
+}
+
+.error {
+  color: red;
+  text-align: left;
+}
+.Login-from{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.jokes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.joke {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.setup {
+  font-weight: bold;
+}
+
+.delivery {
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .jokes-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .jokes-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
